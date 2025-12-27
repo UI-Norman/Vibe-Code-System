@@ -94,6 +94,47 @@ source .venv/Scripts/activate
 # Install dependencies
 pip install -r requirements.txt
 ```
+### Step 2: Set Up API Keys
+
+Create a `.env` file in the project root:
+
+```bash
+# For Groq (recommended)
+GROQ_API_KEY=your-groq-api-key-here
+
+# OR for OpenAI
+OPENAI_API_KEY=your-openai-api-key-here
+```
+
+## How to Run
+
+1. **Activate your virtual environment** (if using pip):
+   ```bash
+   # On Windows:
+   .venv\Scripts\activate
+   
+   # On macOS/Linux:
+   source .venv/bin/activate
+   ```
+
+2. **Run the main.py file**:
+   ```bash
+   python main.py
+   ```
+
+3. **Enter your prompt** when asked:
+   ```
+   Enter your project prompt
+   > Create a to-do list web app using HTML, CSS, and JavaScript
+   ```
+
+4. **Watch the magic happen!** The AI agents will:
+   - Plan your project
+   - Design the architecture
+   - Write all the code files
+   - Create a complete working project
+
+5. **Find your project** in the `generated_projects/` folder with a timestamp.
 
 ## Troubleshooting
 
